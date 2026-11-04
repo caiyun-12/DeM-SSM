@@ -6,9 +6,6 @@
 
 This repository implements a research workflow for **three-class driver-vigilance classification from facial video**: global bidirectional vision selective-state-space scanning, a five-anchor deformable facial prior, global-to-prior multi-head cross-attention, temporal selective-state-space modeling, attention pooling, and a classification head. It includes data manifests, per-clip caches, participant-disjoint splits, the seven Table-5 architectural variants, training and resume, predictions, cross-subject LOSO, metric recomputation, figures, and subject-clustered paired bootstrap.
 
-> [!IMPORTANT]
-> **Not the original authors' archived source code and not a verified reproduction of the published numerical results.** The manuscript does not provide trained checkpoints, participant-ID lists, raw prediction probabilities, original KSS/session annotations, or every implementation choice. Consequently, this repository provides an inspectable implementation of the **described idea**, not evidence that the historical Tables 2–7 or Supplementary Tables S1–S15 have been independently reproduced. No real datasets, pretrained weights, or manuscript performance numbers are shipped. See [Reproducibility gaps](docs/REPRODUCIBILITY_GAPS.md).
-
 ## Repository layout
 
 ```text
