@@ -1,0 +1,6 @@
+{
+  "train": ["REPLACE_TRAIN_SUBJECT_ID"],
+  "val": ["REPLACE_VALIDATION_SUBJECT_ID"],
+  "test": ["REPLACE_TEST_SUBJECT_ID"],
+  "description": "TEMPLATE ONLY: fill actual disjoint subject identities before training"
+}

@@ -1,0 +1,35 @@
+# Never commit original or derived identifiable video data
+/data/*
+!/data/.gitkeep
+/outputs/*
+!/outputs/.gitkeep
+*.avi
+*.mp4
+*.mov
+*.mkv
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.env
+# IDE/OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+# Local files
+*.log
+*.bak

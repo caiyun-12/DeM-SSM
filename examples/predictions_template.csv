@@ -1,0 +1,2 @@
+clip_id,subject_id,true_label,pred_label,prob_0,prob_1,prob_2,seed
+REPLACE_WITH_ACTUAL_MODEL_OUTPUT,REPLACE_ID,0,0,0.80,0.10,0.10,0

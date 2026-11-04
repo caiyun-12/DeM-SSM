@@ -1,0 +1,35 @@
+# Tiny test config; no scientific performance meaning.
+model:
+  variant: dem_ssm
+  image_size: 32
+  frames: 3
+  patch: 8
+  dim: 16
+  state_size: 4
+  n_classes: 3
+  landmarks: 5
+  deform_heads: 4
+  deform_points: 2
+  cross_heads: 4
+  max_offset_px: 3.0
+  backbone: vim
+  prior: deformable
+  temporal: ssm
+  frame_chunk: 2
+  checkpoint_frames: false
+train:
+  epochs: 1
+  batch_size: 2
+  grad_accum: 1
+  lr: 0.001
+  weight_decay: 0.05
+  patience: 2
+  offset_lambda: 0.05
+  num_workers: 0
+  device: cpu
+  amp: false
+  seed: 7
+  cache_dir: data/toy_cache
+  landmark_mode: static
+  detector: none
+  crop_margin: 1.2

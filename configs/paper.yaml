@@ -1,0 +1,35 @@
+# Manuscript Table 1; model weights, crop/landmark provenance, exact code are unavailable.
+model:
+  variant: dem_ssm
+  image_size: 224
+  frames: 64
+  patch: 16
+  dim: 256
+  state_size: 16
+  n_classes: 3
+  landmarks: 5
+  deform_heads: 4
+  deform_points: 4
+  cross_heads: 4
+  max_offset_px: 24.0  # engineering assumption; NOT specified in manuscript
+  backbone: vim
+  prior: deformable
+  temporal: ssm
+  frame_chunk: 4
+  checkpoint_frames: true
+train:
+  epochs: 150
+  batch_size: 16
+  grad_accum: 1
+  lr: 0.001
+  weight_decay: 0.05
+  patience: 15
+  offset_lambda: 0.05
+  num_workers: 0
+  device: auto
+  amp: true
+  seed: 0
+  cache_dir: data/cache
+  landmark_mode: from_file  # or mediapipe; 'static' is demonstration only
+  detector: none  # assumes face-cropped frames; Haar is a non-paper approximation
+  crop_margin: 1.2

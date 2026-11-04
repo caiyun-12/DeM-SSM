@@ -1,0 +1,2 @@
+clip_id,dataset,subject_id,session_id,video_path,label,start_frame,num_frames,landmarks_path
+REPLACE_CLIP_000,uta_rldd,REPLACE_SUBJECT,REPLACE_SESSION,/absolute/path/to/face_cropped_video.mp4,0,0,64,/absolute/path/to/clip_landmarks.npy
